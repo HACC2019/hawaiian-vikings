@@ -130,6 +130,10 @@ export class LineChartComponent implements OnInit {
     this.chart.hideDataset(1, !isHidden);
   }
 
+  public hideThree() {
+    const isHidden = this.chart.isDatasetHidden(2);
+    this.chart.hideDataset(2, !isHidden);
+  }
 
   public pushOne() {
     this.lineChartData.forEach((x, i) => {
