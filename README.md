@@ -11,3 +11,6 @@ git clone https://github.com/HACC2019/hawaiian-vikings.git
 cd hawaiian-vikings/ng1
 npm i
 ng serve
+
+# Cloud Hosting 
+see feature 3

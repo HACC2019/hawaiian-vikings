@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "ng1/dist/ng1",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
