@@ -4,6 +4,7 @@ import {HomeComponent} from './home/home.component';
 import { MyLineChartComponent } from './my-line-chart/my-line-chart.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
 import { PolarChartComponent } from './polar-chart/polar-chart.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
 
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: "chart1", component: MyLineChartComponent},
   { path: "chart2", component: LineChartComponent},
   { path: "chart3", component: PolarChartComponent},
+  { path: "chart4", component: BarChartComponent},
 
 ];
 
