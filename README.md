@@ -8,9 +8,9 @@ https://angular.io/guide/setup-local
 git clone https://github.com/HACC2019/hawaiian-vikings.git
 
 # Install & Start Project
-cd hawaiian-vikings/ng1
-npm i
-ng serve
+1. cd hawaiian-vikings/ng1
+2. npm i
+3. ng serve
 
 # Cloud Hosting 
 see feature 3
