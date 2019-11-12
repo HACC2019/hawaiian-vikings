@@ -12,5 +12,6 @@ git clone https://github.com/HACC2019/hawaiian-vikings.git
 2. npm i
 3. ng serve
 
-# Cloud Hosting 
-see feature 3
+# Live Demo
+1. https://chartjs-1103.firebaseapp.com
+
