@@ -1,15 +1,10 @@
-<p>footer works!</p>
 
-
-<!-- <h3>Raised Buttons</h3>
-<div class="example-button-row">
-  <button mat-raised-button>Basic</button>
-  <button mat-raised-button color="primary">Primary</button>
-  <button mat-raised-button color="accent">Accent</button>
-  <button mat-raised-button color="warn">Warn</button>
-  <button mat-raised-button disabled>Disabled</button>
-  <a mat-raised-button routerLink=".">Link</a>
-</div> -->
+<h3>Nav</h3>
+<div layout="row" layout-align="center center">
+  <div><button mat-raised-button [routerLink]="['/chart2']"  color="acccent">Health</button></div>
+  <div><button mat-raised-button [routerLink]="['/chart3']" color="acccent">Power</button></div>
+  <div><button mat-raised-button [routerLink]="['/chart4']" color="accent">Utilization</button></div>
+</div>
 
 <!-- 
   <div class="flex-item">
