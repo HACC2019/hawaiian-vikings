@@ -1,3 +1,5 @@
+<h1>What is the current health status</h1>
+<h2>This chart should have realtime data, next feature</h2>
 <div class="flex">
   <div class="flex-item">
     <div style="display: block;">
@@ -13,21 +15,35 @@
                 (chartClick)="chartClicked($event)"></canvas>
     </div>
   </div>
-  <div class="flex-item">
-    <table class="table table-responsive table-condensed">
-      <tr>
-        <th *ngFor="let label of lineChartLabels">{{label}}</th>
-      </tr>
-      <tr *ngFor="let d of lineChartData; let i=index" [class]="'line-'+i">
-        <td *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j]}}</td>
-      </tr>
-    </table>
-    <!-- <button mat-button mat-raised-button color="primary" (click)="randomize()">Randomize</button> -->
-    <button mat-button mat-raised-button color="primary" (click)="pushOne()">Next Sesions (10 mins later)</button>
-    <!-- <button mat-button mat-raised-button color="primary" (click)="changeColor()">Recolor</button> -->
-    <button mat-button mat-raised-button color="primary" (click)="hideOne()">Toggle kWh Used</button>
-    <button mat-button mat-raised-button color="primary" (click)="hideTwo()">Toggle CO2 Saved</button>
-    <button mat-button mat-raised-button color="primary" (click)="hideThree()">Toggle US$ Cost</button>
-    <!-- <button mat-button mat-raised-button color="primary" (click)="changeLabel()">Change Label</button> -->
-  </div>
 </div>
+
+
+<div class="flex-item">
+  <table class="table table-responsive table-condensed">
+    <tr>
+      <th *ngFor="let label of lineChartLabels">{{label}}</th>
+    </tr>
+    <tr *ngFor="let d of lineChartData; let i=index" [class]="'line-'+i">
+      <td *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j]}}</td>
+    </tr>
+  </table>
+  
+</div> 
+<div class="flex-item" center>
+  <button mat-button mat-raised-button color="primary" (click)="pushOne()">Next Sesions (10 mins later)</button>
+  <button mat-button mat-raised-button color="primary" (click)="hideOne()">Toggle kWh Used</button>
+  <button mat-button mat-raised-button color="primary" (click)="hideTwo()">Toggle CO2 Saved</button>
+  <button mat-button mat-raised-button color="primary" (click)="hideThree()">Toggle US$ Cost</button>
+</div>
+
+<ul>
+  <li>This chart loads session data by sequence, most recent on right</li>
+  <li>The BAR shape shows energy usage by session is labeled by color</li>
+  <li>PINK is Energy charged</li>
+  <li>The BAR shape shows CO2 saved by session is labelled by color</li>
+  <li>GREEN is CO2 saved</li>
+  <li>The line shape shows amount charged by sessions is labeled by color  </li>
+  <li>Tips</li>
+  <li>When both bar and line shapes are zero, a session started and NO energy was charged and amount charged.</li>
+  <li>When bar shapes are NOT zero and line is zero, a session started and engery was used and amount was not charged. </li>
+</ul>

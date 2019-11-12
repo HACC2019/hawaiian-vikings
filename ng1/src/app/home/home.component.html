@@ -1,5 +1,4 @@
 <p>home works!</p>
-
 <!-- <div class="cardList">
         <ng-container *ngFor="let _ of [1,2,3,4,5,6]">
           <app-my-line-chart class="cardListItem"></app-my-line-chart>
@@ -9,11 +8,20 @@
 
       <div 
   fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-start">
-  <ng-container *ngFor="let _ of [1,2]">
-    <app-my-line-chart fxFlex="1 0 calc(33.3% - 32px)"></app-my-line-chart>
-    <app-my-line-chart fxFlex="0 2 calc(33.3% - 32px)"></app-my-line-chart>
+  <ng-container *ngFor="let _ of [2]">
+    <app-my-line-chart fxFlex="1 2 calc(33.3% - 32px)"></app-my-line-chart>
+    <app-line-chart-b fxFlex="1 2 calc(33.3% - 32px)"></app-line-chart-b>
   </ng-container>
 </div>
+
+<!-- <div 
+fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-start">
+</div> -->
+
+  <!-- <app-my-line-chart ></app-my-line-chart>
+  <app-line-chart-b ></app-line-chart-b> -->
+
+
 
 
 <!-- <div fxLayout="row" fxLayoutAlign="space-between">
@@ -64,3 +72,8 @@
 <!-- <app-footer></app-footer> -->
 
 
+<ul>
+  <li>This chart loads session data by sequence, most recent on right</li>
+  <li>The pie shape shows energy usage by hour of day is labeled by color </li>
+  <li>The most energy charged is represented by size</li>
+</ul>

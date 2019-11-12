@@ -11,3 +11,8 @@ ng generate ng2-charts-schematics:bar bar-chart
 ## update hawaiian-vikings/ng1/src/app/shared/shell/shell.component.html
 `<a mat-list-item routerLink="/chart4" (click)="drawer.close()">Chart 4</a>`
 
+# import data from data.ts
+`import {linedatalabel2, linedataset2, linedatamark2} from '../data';`
+
+
+

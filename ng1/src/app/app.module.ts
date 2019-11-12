@@ -15,6 +15,7 @@ import { LineChartComponent } from './line-chart/line-chart.component';
 import { PolarChartComponent } from './polar-chart/polar-chart.component';
 import { FooterComponent } from './footer/footer.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { LineChartBComponent } from './line-chart-b/line-chart-b.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
     PolarChartComponent,
     FooterComponent,
     BarChartComponent,
+    LineChartBComponent,
   ],
   imports: [
     BrowserModule,

@@ -14,14 +14,25 @@ const energy2 = [243, 156, 365, 30, 156, 265, 356, 543];
 const duration2 = [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60];
 const duration1 = [0.04, 28.07, 9.21, 31.16, 0.06, 11.23, 0.07, 38.11, 31.17];
 
-//chart2
+//chart4 bar 
+export const barDataLabel4 = time1;
+export const barDataSet4 = 
+[
+  { data: duration1, label: 'Available Minutes', stack: 'a' },
+  { data: duration2, label: 'Charged Minutes', stack: 'a',yAxisID: 'energyUsed' },
+  { data: amount1, label: 'Amount Charged', stack: 'c', type: 'line' }
+];
+
+//chart2 line
 export const linedatamark2 = mark1;
 export const linedatalabel2 = time1;
 export const linedataset2 = [
   { data: energy1, label: 'kWh used' },
   { data: co21, label: 'CO2 saved' },
-  { data: amount1, label: 'US$ cost', yAxisID: 'y-axis-1' }
+  { data: amount1, label: 'US$ cost', yAxisID: 'y-axis-1', type:'bar' }
 ];
+
+
 
 
 export const polarlabel1 = time1;
